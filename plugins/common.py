@@ -67,7 +67,7 @@ try:
     stream = open(wenda_Config, encoding='utf8')
 except:
     error_print('加载配置失败，改为加载默认配置')
-    stream = open('example.config.yml', encoding='utf8')
+    stream = open('wenda_learn\wenda\config.yml', encoding='utf8')
 settings = load(stream, Loader=Loader)
 settings = dotdict(settings)
 stream.close()
